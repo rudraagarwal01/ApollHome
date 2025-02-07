@@ -1,0 +1,295 @@
+/* Reset & basic box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #467e91;/* Adjust to match your design */
+    color: #333; 
+  }
+  
+  /* Main container with three columns: sidebar, main content, right panel */
+  .container {
+    display: grid;
+    grid-template-columns: 220px 1fr 350px;
+    grid-gap: 20px;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars from the container */
+  }
+  
+  /* ===== LEFT SIDEBAR ===== */
+  .sidebar {
+    background-color: #467e91; /* Dark teal or any preferred color */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .logo h2 {
+    margin-bottom: 100px;
+  }
+  
+  /* Navigation menu */
+  .nav-menu ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .nav-menu ul li {
+    margin-bottom: 50px;
+  }
+  
+  .nav-menu ul li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+  }
+  
+  .nav-menu ul li a i {
+    margin-right: 20px;
+    font-size: 1.5rem; /* Adjust icon size */
+    color: white; /* Icon color */
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #d1d1d1;
+  }
+  
+  /* Switch mode button at the bottom of the sidebar */
+  .switch-mode {
+    margin-top: auto;
+  }
+  
+  .switch-mode button {
+    background-color: #ffffff;
+    color: #324d5c;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .switch-mode button:hover {
+    opacity: 0.9;
+  }
+  
+  /* ===== MAIN CONTENT ===== */
+  .main-content {
+    padding: 20px;
+    overflow-y: auto; /* Scroll main content if needed */
+  }
+  
+  /* Top section with circular icons */
+  .top-section {
+    margin-bottom: 20px;
+  }
+  
+  .circle-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px
+  }
+  
+  .circle-icons .icon {
+    text-align: center; 
+  }
+  
+  .circle-icons .icon img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 10px;
+    border: 3px solid #ffff; 
+  }
+
+  .circle-icons .icon p {
+    color: white !important; 
+  }
+  
+  /* Post container */
+  .post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .follow-btn {
+    background-color: #467e91;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .follow-btn:hover {
+    background-color: #3a969f;
+  }
+
+/* Reduce image size */
+.post-image img {
+  width: 100%; /* Adjust width relative to the post */
+  max-height: 500px; /* Set a max height */
+  object-fit: cover; /* Maintain aspect ratio */
+  display: block;
+  margin: 10px auto;
+}
+
+  
+  .post-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Updated post actions */
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes the last item to the right */
+  margin-top: 20px;
+}
+
+.post-actions .left-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions .right-action {
+  margin-left: auto; /* Pushes the bookmark icon to the right */
+}
+
+  
+  .post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  
+  .post-actions button i {
+    margin-right: 6px;
+    font-size: 35px;
+  }
+  
+  .post-actions button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* ===== RIGHT PANEL ===== */
+  .right-panel {
+    background-color: #467e91;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between PFP and text */
+}
+
+.profile-pic {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover;
+    border: 2px solid #fff; /* Optional border */
+}
+
+.profile-header h2 {
+  color: white; 
+  font-weight: 100; 
+}
+
+  
+  .quote {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 20px; 
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    line-height: 1.5;
+  }
+  
+  .mentors h3 {
+    margin-bottom: 40px;
+    margin-top: 50px; 
+    font-style: italic; 
+    font-weight:100; 
+    color: #fff; 
+  }
+  
+  .mentor-card {
+    display: flex;
+    align-items: center;
+    background-color:  white; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .mentor-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .mentor-card .mentor-info {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .mentor-card .follow-btn {
+    background-color: #467e91;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .mentor-card .follow-btn:hover {
+    background-color: #3a969f;
+  }
+  
