@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apollonian</title>
+
+  <!-- Font Awesome Icons (CDN) -->
+  <script src="https://kit.fontawesome.com/3ef6f07ea0.js" crossorigin="anonymous"></script>
+
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2><i class="fa-solid fa-brain"></i> Apollonian</h2>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+          <li><a href="#"><i class="fa-solid fa-pen-nib"></i> Posts</a></li>
+          <li><a href="#"><i class="fas fa-user-friends"></i> Mentors</a></li>
+          <li><a href="#"><i class="fa-regular fa-message"></i> Chats</a></li>
+          <li><a href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="switch-mode">
+        <button>Switch to light mode</button>
+      </div>
+    </aside>
+    <!-- ======================== -->
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <!-- Top bar with circular icons (Breathing, Meditation, Self Love, Support, Tips) -->
+      <div class="top-section">
+        <div class="circle-icons">
+          <div class ="icon">
+            <img src="images/add.jpg" alt="Add" />
+            <p>New Post</p>
+          </div>
+          <div class="icon">
+            <img src="images/breath.jpg" alt="Breathing" />
+            <p>Breathing</p>
+          </div>
+          <div class="icon">
+            <img src="images/meditating.jpeg" alt="Meditation" />
+            <p>Meditation</p>
+          </div>
+          <div class="icon">
+            <img src="images/selflove.jpg" alt="Self Love" />
+            <p>Self Love</p>
+          </div>
+          <div class="icon">
+            <img src="images/support.png" alt="Support" />
+            <p>Support</p>
+          </div>
+          <div class="icon">
+            <img src="images/tips.webp" alt="Tips" />
+            <p>Tips</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- A single post -->
+      <div class="post">
+        <div class="post-header">
+          <div class="user-info">
+            <img
+              src="images/profile.png"
+              alt="User profile"
+              class="user-pic"
+            />
+            <div>
+              <h3>Username</h3>
+              <span>12 minutes ago</span>
+            </div>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="post-image">
+          <!-- Replace with your actual bubble tea image URL -->
+          <img
+            src="images/BubbleTea.avif" alt="Bubble tea - Hug In"   />
+        </div>
+
+        <div class="post-content">
+          <p>Username • Remember to reward yourself, you deserve it!</p>
+        </div>
+
+        <div class="post-actions">
+          <div class="left-actions">
+              <button><i class="fa-regular fa-heart"></i></button>
+              <button><i class="fa-regular fa-comment"></i></button>
+              <button><i class="fa-regular fa-share-from-square"></i></button>
+          </div>
+          <button class="right-action"><i class="fa-regular fa-bookmark"></i></button>
+        </div>      
+      </div>
+    </main>
+    <!-- ======================== -->
+
+    <!-- ===== RIGHT PANEL ===== -->
+    <aside class="right-panel">
+      <div class="profile-header">
+        <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+        <h2>Hello, [name]</h2>
+    </div>
+    
+
+      <div class="quote">
+        <p>"To love someone else is to first love yourself"</p>
+        <span>- Unknown</span>
+      </div>
+
+      <div class="mentors">
+        <h3>Mentors you might like:</h3>
+        <!-- Repeat as many mentor cards as needed -->
+        <div class="mentor-card">
+          <img src="images/pfp1.png" alt="Mentor" />
+          <div class="mentor-info">
+            <p>Username</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="mentor-card">
+          <img src="images/pfp2.png" alt="Mentor" />
+          <div class="mentor-info">
+            <p>Username</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="mentor-card">
+          <img src="images/pfp3.webp" alt="Mentor" />
+          <div class="mentor-info">
+            <p>Username</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="mentor-card">
+          <img src="images/pfp4.webp" alt="Mentor" />
+          <div class="mentor-info">
+            <p>Username</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+        <div class="mentor-card">
+          <img src="images/pfp5.png" alt="Mentor" />
+          <div class="mentor-info">
+            <p>Username</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+      </div>
+    </aside>
+    <!-- ======================== -->
+  </div>
+</body>
+</html>
