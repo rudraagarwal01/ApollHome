@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Apollonian</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Apollonian</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/3ef6f07ea0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/styles/global.css"> -->
+    <link rel="stylesheet" href="/components/home/index/index.css">
+
 
   <!-- Font Awesome Icons (CDN) -->
-  <script src="https://kit.fontawesome.com/3ef6f07ea0.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/3ef6f07ea0.js" crossorigin="anonymous"></script> -->
 
-  <!-- Link to the external CSS file -->
-  <link rel="stylesheet" href="styles.css" />
+
 </head>
 <body>
   <div class="container">
@@ -20,17 +26,20 @@
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
-          <li><a href="#"><i class="fa-solid fa-pen-nib"></i> Posts</a></li>
-          <li><a href="#"><i class="fas fa-user-friends"></i> Mentors</a></li>
-          <li><a href="#"><i class="fa-regular fa-message"></i> Chats</a></li>
-          <li><a href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
+          <li><a href="/home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+          <li><a href="/posts"><i class="fa-solid fa-pen-nib"></i> Posts</a></li>
+          <li><a href="/mentors"><i class="fas fa-user-friends"></i> Mentors</a></li>
+          <li><a href="/chats"><i class="fa-regular fa-message"></i> Chats</a></li>
+          <li><a href="/profile"><i class="fa-regular fa-user"></i> Profile</a></li>
         </ul>
       </nav>
 
       <div class="switch-mode">
-        <button>Switch to light mode</button>
+        <button>
+            <i class="fa-solid fa-toggle-off"></i> 
+            Switch to light mode
+        </button>
       </div>
     </aside>
     <!-- ======================== -->
